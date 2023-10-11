@@ -1,39 +1,28 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2023-AI266)](https://api.reuse.software/info/github.com/SAP-samples/teched2023-AI266)
 
-# Session ID - Session Title
+# AI266 - E2E Scenario Building on SAP AI Core and SAP AI Launchpad
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2022 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2023 session called **AI266 - E2E Scenario Building on SAP AI Core and SAP AI Launchpad.**
 
 ## Overview
 
-This session introduces attendees to...
-
-## Requirements
-
-The requirements to follow the exercises in this repository are...
+This session introduces attendees to SAP AI Core and SAP AI Launchpad and how to leverage these AI solutions to infuse AI into applications and business scenarios
 
 ## Exercises
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
+### Experience working with AI Core and AI Launchpad - Hands on labs
 
-- [Getting Started](exercises/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
+There are two hands on lab paths, choose one based on your comfort level/familiarity with AICORE and AI Launchpad
 
-  
-**OR** Link to the Tutorial Navigator for example...
+1. If you are new to AICORE, choose the Introductory Hands on lab. Estimated time to complete: 15 min
 
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
+2. If you are already familiar with AICORE and venture more into the inner workings, you can choose the Advanced Hands on lab. Estimated time to complete: 50 min
 
-**IMPORTANT**
+- [Exercise 1 - Introductory Hands on lab](exercises/ex1/README.md)
+- [Exercise 2 - Advanced Hands on lab](exercises/ex2/README.md)
 
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
