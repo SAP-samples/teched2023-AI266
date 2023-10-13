@@ -14,14 +14,7 @@ This session introduces attendees to SAP AI Core and SAP AI Launchpad and how to
 
 ### Experience working with AI Core and AI Launchpad - Hands on labs
 
-There are two hands on lab paths, choose one based on your comfort level/familiarity with AICORE and AI Launchpad
-
-1. If you are new to AICORE, choose the Introductory Hands on lab. Estimated time to complete: 15 min
-
-2. If you are already familiar with AICORE and venture more into the inner workings, you can choose the Advanced Hands on lab. Estimated time to complete: 50 min
-
 - [Exercise 1 - Introductory Hands on lab](exercises/ex1/README.md)
-- [Exercise 2 - Advanced Hands on lab](exercises/ex2/README.md)
 
 
 ## Contributing
