@@ -64,7 +64,7 @@ Used to trigger executions and deployments, watch the logs and visualize metrics
 
 ## Hands on steps
 
-AI Launchpad URL - [https://dcom-blr-handson.ai-launchpad.prodintern.eu-central-1.aws.apps.ml.hana.ondemand.com](https://dcom-blr-handson.ai-launchpad.prodintern.eu-central-1.aws.apps.ml.hana.ondemand.com)
+AI Launchpad URL - [https://teched-launchpad-demo.ai-launchpad.prodintern.eu-central-1.aws.apps.ml.hana.ondemand.com](https://teched-launchpad-demo.ai-launchpad.prodintern.eu-central-1.aws.apps.ml.hana.ondemand.com)
 
 Click on the above link, you should be logged directly into the app. If prompted for credentials use the username and password details stored in the laptop you are accessing this hands on guide on (Home folder -> technical-users)
 
@@ -72,7 +72,10 @@ Click on the above link, you should be logged directly into the app. If prompted
 
 Object Store is used as storage for your dataset, models, resultsets inside the SAP AI Core ecosystem. Currently AI Core supports S3, Azure blob storage, WebDHFS and Alicloud OSS. For our use case let's use S3.
 
-1. In the Workspaces app, choose the AI API connection `dcom-handson`
+1. In the Workspaces app, choose the AI API connection `teched-handson`
+
+<left><img src="./images/Workspaces.png" alt="Workspaces App" style="width: 800px;"/></left>
+
 2. Open the SAP AICORE Administration app and choose Object Store Secrets
 3. Click on Add, in the dialog box select the resource group that is assigned to you
 4. Add the following details in the object store
@@ -80,24 +83,31 @@ Object Store is used as storage for your dataset, models, resultsets inside the 
     * Name: default
     * Type: S3
     * Path Prefix: example-dataset/house-price-toy
-    * Bucket: hcp-bdc928d9-c4e5-4295-a0ed-5b819b4a8f2c
+    * Bucket: hcp-3125e8fa-d1b6-4409-ba0c-a52d400ecfab
     * Endpoint: s3-eu-central-1.amazonaws.com
     * Region: eu-central-1
     * Toogle `Use HTTPS` button on
     * Secret: 
             `{
-            "AWS_ACCESS_KEY_ID": "AKIASRWQYWCKZBP6TQ6F",
-            "AWS_SECRET_ACCESS_KEY": "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"
+            "AWS_ACCESS_KEY_ID": "AKIAWSCM7XP3OLAXE7E6",
+            "AWS_SECRET_ACCESS_KEY": "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"
             }`
 
+<left><img src="./images/Object_Store.png" alt="Object Store Secrets Page" style="width: 800px;"/></left>
 
 ### Register Training Dataset
 
 1. Go back the Workspaces app, choose the AI API connection and select the resource group that is assigned to you
 2. Open the ML Operations app and choose Datasets
-3. Click on Add, in the Select Scenario page select the sceanrio
+3. Click on Add, in the Select Scenario page select the sceanrio `House Price (Tutorial)`
+
+<left><img src="./images/Datasets_Scenario.png" alt="Datasets Scenario Page" style="width: 800px;"/></left>
+
 4. In the General Information page provide a name for the dataset, eg. House Price Dataset 101
 5. In the URL page, provide the dataset URL as ai://default/data/jan
+
+<left><img src="./images/Datasets_URL.png" alt="Datasets URL Page" style="width: 800px;"/></left>
+
 6. Review and add the dataset
 
 Note:
@@ -117,16 +127,33 @@ If you break down the above dataset URL specification, we have
     * Scenario: House Price (Tutorial)
     * Version: 1.0
     * Executable: training-metrics
+
+<left><img src="./images/Configurations_Executable.png" alt="Configurations Name and Executable Page" style="width: 800px;"/></left>
+
 3. In the Input Parameters page, add a value for the input parameter (DT_MAX_DEPTH) as 3
 4. In the Input Artifacts page, from the right hand side select the registered dataset in the assignment column
+
+<left><img src="./images/Configurations_Artifact.png" alt="Configurations Input Artifacts Page" style="width: 800px;"/></left>
+
 5. Review and Create the configuration
 
 ### Trigger Execution
 
 1. Previous step lands us on configuration details page, from there click on create execution button to create the execution
+
+<left><img src="./images/Configuration_Details.png" alt="Configuration Details Page" style="width: 800px;"/></left>
+
 2. The execution will initially be in Unknown state and after few mins, the execution goes to running state. Use the refresh button to check for the latest status.
+
+<left><img src="./images/Execution_Running.png" alt="Execution Running" style="width: 800px;"/></left>
+
 3. Once the Execution reaches completed state, we can see that an output artifact (housepricemodel) is generated
+
+<left><img src="./images/Execution_Completed.png" alt="Execution Completed" style="width: 800px;"/></left>
+
 4. We can also see some metrics associated with the execution
+
+<left><img src="./images/Metrics.png" alt="Metrics" style="width: 800px;"/></left>
 
 
 ### Create Serving Configuration
@@ -137,17 +164,28 @@ If you break down the above dataset URL specification, we have
     * Scenario: House Price (Tutorial)
     * Version: 1.0
     * Executable: server
+
+<left><img src="./images/Configurations_Serving_Executable.png" alt="Configurations Serving Name and Executable Page" style="width: 800px;"/></left>
+
 3. In the Input Parameters page, add a value for the input parameter (greetmessage) eg. hello
 4. In the Input Artifacts page, from the right hand side select the generated model (housepricemodel) in the assignment column
+
+<left><img src="./images/Configurations_Serving_Artifact.png" alt="Configurations Serving Artifacts Page" style="width: 800px;"/></left>
+
 5. Review and Create the configuration
 
 
 ### Trigger Deployment
 
 1. Previous step lands us on configuration details page, from there click on create deployment button
+
+<left><img src="./images/Create_Deployment.png" alt="Create Deployment" style="width: 800px;"/></left>
+
 2. Keep the duration as standard, review and create the deployment
 3. The deployment will initially be in Unknown state and after few mins (depends on the resource availability in the cluster), the deployment goes to running state. Use the refresh button to check for the latest status.
 4. Once the deployment is Running we can see that a deployment URL is auto generated and is available on deployment details page.
+
+<left><img src="./images/Deployment_Running.png" alt="Deployment Running" style="width: 800px;"/></left>
 
 
 Use any REST client to make prediction calls. Send a POST request to `<DEPLOYMENT_URL>/v2/predict` with your resource group as header `AI-Resource-Group: <resource-group>` and send the below payload to predict the price of a house when we use certain attributes as below
@@ -171,7 +209,7 @@ Use any REST client to make prediction calls. Send a POST request to `<DEPLOYMEN
 #### Token Generator
 
 ```
-TOKEN=$(curl --silent --location "https://vscode5-xhd4bzz3.authentication.eu10.hana.ondemand.com/oauth/token?grant_type=client_credentials" --header "Authorization: Basic $AUTH" | jq -r .access_token)
+TOKEN=$(curl --silent --location "https://teched-launchpad-demo.authentication.sap.hana.ondemand.com/oauth/token?grant_type=client_credentials" --header "Authorization: Basic $AUTH" | jq -r .access_token)
 ```
 
 Note: $AUTH is the authorization token which is saved in a file called auth_token in the laptop you are accessing this handson guide on (Home folder). We will set the auth token as environmental variable ($AUTH) for you, if in case the auth token is not available please set the environmental variable.
@@ -179,7 +217,7 @@ Note: $AUTH is the authorization token which is saved in a file called auth_toke
 #### Inference call
 
 ```
-curl --silent --location "https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/<deployment-id>/v2/predict" \
+curl --silent --location "https://api.ai.internalprod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/<deployment-id>/v2/predict" \
 --header "Content-Type: application/json" \
 --header "AI-Resource-Group: <resource-group-id>" \
 --header "Authorization: Bearer $TOKEN" \
