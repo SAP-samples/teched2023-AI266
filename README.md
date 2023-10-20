@@ -12,9 +12,9 @@ This session introduces attendees to SAP AI Core and SAP AI Launchpad and how to
 
 ## Exercises
 
-### Experience working with AI Core and AI Launchpad - Hands on labs
+In this interactive Hands-on Lab, we will be utilizing scikit-learn to train a house price dataset. Following the training, we will leverage the generated house price model to create a deployment. we will explore the capabilities of AI Core and AI Launchpad to perform online inferencing, enabling real-time predictions.
 
-- [Exercise 1 - Introductory Hands on lab](exercises/ex1/README.md)
+[Exercise 1 - Introductory Hands on lab](exercises/ex1/README.md)
 
 
 ## Contributing
