@@ -22,8 +22,6 @@ SAP AI Launchpad is a multitenant software as a service (SaaS) application in SA
 5. Create a Configuration for your Serving Executable
 6. Serve the model as a web service
 
-In this hands on lab we will not go through all the above steps. 
-
 Disclaimer: Please note, certain steps pertaining to the onboarding process have been pre-emptively completed for your convenience. For a more detailed understanding of the onboarding process, please refer to our [help guide](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/initial-setup)
 
 
