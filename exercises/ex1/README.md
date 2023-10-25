@@ -15,18 +15,16 @@ SAP AI Launchpad is a multitenant software as a service (SaaS) application in SA
 
 ## AICORE End to End Workflow
 
-1. Subscribe to AICORE service in BTP
-2. Onboard a git repository with workflow/serving templates
-3. Create a docker registry secret
-4. Create a Resource Group
-5. Register your Object Store storage
-6. Register a Training Dataset
-7. Create a Configuration for your Training Executable
-8. Train on your dataset
-9. Create a Configuration for your Serving Executable
-10. Serve the model as a web service
+1. Register your Object Store storage
+2. Register a Training Dataset
+3. Create a Configuration for your Training Executable
+4. Train on your dataset
+5. Create a Configuration for your Serving Executable
+6. Serve the model as a web service
 
-In this hands on lab we will not go through all the above steps. Steps 1 to 4 are part of onboarding and we have done it for you.
+In this hands on lab we will not go through all the above steps. 
+
+Disclaimer: Please note, certain steps pertaining to the onboarding process have been pre-emptively completed for your convenience. For a more detailed understanding of the onboarding process, please refer to our [help guide](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/initial-setup)
 
 
 <center><img src="./images/AICORE_workflow.png" alt="AICORE E2E workflow" style="width: 1000px;"/></center>
