@@ -1,7 +1,7 @@
 #  SAP AICORE and AI Launchpad Hands on lab
 
 # Use case
-In this Hands on lab we will be training a [house price](https://scikit-learn.org/stable/datasets/real_world.html#california-housing-dataset) dataset available in scikit-learn. Then use the generated house price model to create a deployment and do online inferencing
+In this Hands on lab we will be training a [house price](https://scikit-learn.org/stable/datasets/real_world.html#california-housing-dataset) dataset. Then use the generated house price model to create a deployment and do online inferencing
 
 # Introduction:
 
@@ -32,10 +32,10 @@ _Disclaimer: Please note, certain steps pertaining to the onboarding process hav
 
 <left><img src="./images/Tenant_RG_Relationship.png" alt="Tenant Resource Group relationship" style="width: 800px;"/></left>
 
-* Tenant is a higher level concept which corresponds to one AICORE subscription. 
+* Tenant is a higher level construct which corresponds to one AICORE subscription. 
 * A Tenant can have many resource groups. 
 * Resource groups are isolated housing units for your executions and deployments. 
-* With this isolation one resource group cannot access the executions and deployments of another resource group.
+* With this isolation, one resource group cannot access the executions and deployments of another resource group.
 
 # AI Launchpad Overview
 
@@ -214,10 +214,8 @@ Now that a deployment URL is available we can use a REST client to make inferenc
 #### Token Generator
 
 ```
-TOKEN=$(curl --silent --location "https://teched-launchpad-demo.authentication.sap.hana.ondemand.com/oauth/token?grant_type=client_credentials" --header "Authorization: Basic $AUTH" | jq -r .access_token)
+TOKEN=$(curl --silent --location "https://teched-launchpad-demo.authentication.sap.hana.ondemand.com/oauth/token?grant_type=client_credentials" --header "Authorization: Basic c2ItODNjOTVkZTYtZjRmOS00ODMyLWJmZmYtZTBiNWUwYWRiOTZlIWI5Nzg5N3x4c3VhYV9zdGQhYjc3MDg5OmI2Y2RhNTEyLTU0OTYtNDYzMy05NTg5LTVmZmNmYWZlMmYxNyQ2Q3U3enplNElGTDZTeU5rdE1UdXc5eVc3MlZVLXZJTGUxSEpQem14UW1ZPQ==" | jq -r .access_token)
 ```
-
-Note: $AUTH is the authorization token which is saved in a file called auth_token in the workstation you are accessing this handson guide on. We will set the auth token as environmental variable ($AUTH) for you, if in case the auth token is not available please reach out to presenters.
 
 #### Inference call
 
