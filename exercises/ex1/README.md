@@ -62,7 +62,7 @@ Used to trigger executions and deployments, watch the logs and visualize metrics
 
 AI Launchpad URL - [https://teched-launchpad-demo.ai-launchpad.prodintern.eu-central-1.aws.apps.ml.hana.ondemand.com](https://teched-launchpad-demo.ai-launchpad.prodintern.eu-central-1.aws.apps.ml.hana.ondemand.com)
 
-Click on the above link, you should be logged directly into the app. If prompted for credentials use the username and password details stored in the laptop you are accessing this hands on guide on
+Click on the above link, you should be logged directly into the app. If prompted for credentials provide the username as `DL_652F6D2C1B59E6028C215346@global.corp.sap` and for password please check with the presenters.
 
 ### 1. Register Object Store
 
