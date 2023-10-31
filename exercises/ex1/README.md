@@ -22,7 +22,7 @@ SAP AI Launchpad is a multitenant software as a service (SaaS) application in SA
 5. Create a Configuration for your Serving Executable
 6. Serve the model as a web service
 
-_Disclaimer: Please note, certain steps pertaining to the onboarding process have been pre-emptively completed for your convenience. For a more detailed understanding of the onboarding process, please refer to our [help guide](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/initial-setup)_
+**_Disclaimer: Please note, certain steps pertaining to the onboarding process have been pre-emptively completed for your convenience. For a more detailed understanding of the onboarding process, please refer to our [help guide](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/initial-setup)_**
 
 
 <center><img src="./images/AICORE_workflow.png" alt="AICORE E2E workflow" style="width: 1000px;"/></center>
@@ -243,9 +243,11 @@ The prediction value you get is in hundreds of thousands of dollars ($100,000).
 
 ### Conclusion
 
-Using SAP AI Core and AI Launchpad we can realize AI usecases in a standard, scalable and vendor agnostic way. In this hands on session we've seen how to manage our AI assets, train on data, generate machine learning models and finally deploy the models to do online inferencing.
+Congratulations on successfully training and deploying a machine learning model.
 
-Hope you found this hands on session informative. To know more about SAP AICORE and AI Launchpad refer to below documents.
+Utilizing SAP AI Core and AI Launchpad, you have accomplished AI use-case realization in a highly standardized, scalable, and hyperscaler-agnostic manner. This hands-on session provided valuable insights into managing AI assets, training models on datasets, generating machine learning models, and ultimately deploying these models for online inference.
+
+Hope you found this session informative. To know more about SAP AICORE and AI Launchpad refer to the ensuing documents.
 
 
 ### References
