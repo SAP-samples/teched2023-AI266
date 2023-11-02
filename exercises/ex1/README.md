@@ -210,13 +210,19 @@ Now that a deployment URL is available we can use a REST client to make inferenc
 
 ### Using curl
 
+Open Git bash application in your system and enter the following commands.
+
 #### Token Generator
+
+For generating the token,
 
 ```
 TOKEN=$(curl --silent --location "https://teched-launchpad-demo.authentication.sap.hana.ondemand.com/oauth/token?grant_type=client_credentials" --header "Authorization: Basic c2ItODNjOTVkZTYtZjRmOS00ODMyLWJmZmYtZTBiNWUwYWRiOTZlIWI5Nzg5N3x4c3VhYV9zdGQhYjc3MDg5OmI2Y2RhNTEyLTU0OTYtNDYzMy05NTg5LTVmZmNmYWZlMmYxNyQ2Q3U3enplNElGTDZTeU5rdE1UdXc5eVc3MlZVLXZJTGUxSEpQem14UW1ZPQ==" | jq -r .access_token)
 ```
 
 #### Inference call
+
+For making the inference call,
 
 ```
 curl --silent --location "https://api.ai.internalprod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/<your-deployment-id>/v2/predict" \
