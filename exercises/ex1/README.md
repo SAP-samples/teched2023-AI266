@@ -66,14 +66,14 @@ Click on the above link, you should be logged directly into the app. If prompted
 
 ### 1. Register Object Store
 
-Object Store is used as storage for your datasets, models, resultsets inside the SAP AI Core ecosystem. Currently AI Core supports S3, Azure blob storage, WebDHFS and Alicloud OSS. For our use case let's use S3.
+Object Store is used as storage for your datasets, models, resultsets inside the SAP AI Core ecosystem. Currently AI Core supports S3, Azure blob storage, WebHDFS and Alicloud OSS. For our use case let's use S3.
 
-1. In the Workspaces app, choose the AI API connection `teched-handson`
+1. In the Workspaces app, choose the AI API connection `teched-handson`. Search and select the resource group that is assigned to you (if you're not sure reach out to the presenters)
 
 <left><img src="./images/Workspaces.png" alt="Workspaces App" style="width: 800px;"/></left>
 
 2. Open the SAP AICORE Administration app and choose Object Store Secrets
-3. On the right top hand corner select the resource group that is assigned to you (if you're not sure reach out to the presenters)
+3. On the right top hand corner select the resource group that is assigned to you
 4. Click on Add,
 5. Add the following details in the secret form
     * Resource Group: `Choose the Resource group assigned to you`
@@ -96,18 +96,17 @@ Object Store is used as storage for your datasets, models, resultsets inside the
 
 ### 2. Register Training Dataset
 
-1. Go back the Workspaces app, choose the AI API connection `teched-handson` and select the resource group that is assigned to you
-2. Now open the ML Operations app and choose Datasets
-3. Click on Add, in the Select Scenario page select the sceanrio `House Price (Tutorial)`
+1. Now open the ML Operations app and choose Datasets
+2. Click on Add, in the Select Scenario page select the sceanrio `House Price (Tutorial)`
 
 <left><img src="./images/Datasets_Scenario.png" alt="Datasets Scenario Page" style="width: 800px;"/></left>
 
-4. In the General Information page provide a name for the dataset, eg. House Price Dataset 101
-5. In the URL page, provide the dataset URL as `ai://default/data/jan`
+3. In the General Information page provide a name for the dataset, eg. House Price Dataset 101
+4. In the URL page, provide the dataset URL as `ai://default/data/jan`
 
 <left><img src="./images/Datasets_URL.png" alt="Datasets URL Page" style="width: 800px;"/></left>
 
-6. Review and add the dataset
+5. Review and add the dataset
 
 Note:
 
