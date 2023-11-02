@@ -80,15 +80,12 @@ Object Store is used as storage for your datasets, models, resultsets inside the
     * Name: default
     * Type: S3
     * Path Prefix: example-dataset/house-price-toy
-    * Bucket: hcp-3125e8fa-d1b6-4409-ba0c-a52d400ecfab
+    * Bucket: hcp-e34e37b7-99a0-47e0-b4c1-ce06bcbcc051
     * Endpoint: s3-eu-central-1.amazonaws.com
     * Region: eu-central-1
     * Toogle `Use HTTPS` button on
-    * Secret: 
-            `{
-            "AWS_ACCESS_KEY_ID": "AKIAWSCM7XP3OLAXE7E6",
-            "AWS_SECRET_ACCESS_KEY": "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"
-            }`
+    * Secret: copy the full content from this file https://github.com/allurisravanth/teched/blob/master/creds and paste it in the secret body
+            
 
 **Note: Please ensure to use the keep the secret name as `default`**
 
