@@ -62,8 +62,6 @@ Used to trigger executions and deployments, watch the logs and visualize metrics
 
 AI Launchpad URL - [https://teched-launchpad-demo.ai-launchpad.prodintern.eu-central-1.aws.apps.ml.hana.ondemand.com](https://teched-launchpad-demo.ai-launchpad.prodintern.eu-central-1.aws.apps.ml.hana.ondemand.com)
 
-Click on the above link, you should be logged directly into the app. If prompted for credentials provide the username as `DL_652F6D2C1B59E6028C215346@global.corp.sap` and for password please check with the presenters.
-
 ### 1. Register Object Store
 
 Object Store is used as storage for your datasets, models, resultsets inside the SAP AI Core ecosystem. Currently AI Core supports S3, Azure blob storage, WebHDFS and Alicloud OSS. For our use case let's use S3.
@@ -80,11 +78,11 @@ Object Store is used as storage for your datasets, models, resultsets inside the
     * Name: default
     * Type: S3
     * Path Prefix: example-dataset/house-price-toy
-    * Bucket: hcp-e34e37b7-99a0-47e0-b4c1-ce06bcbcc051
+    * Bucket: 
     * Endpoint: s3-eu-central-1.amazonaws.com
     * Region: eu-central-1
     * Toogle `Use HTTPS` button on
-    * Secret: copy the full content from this file https://github.com/allurisravanth/teched/blob/master/creds and paste it in the secret body
+    * Secret: 
             
 
 **Note: Please ensure to use the keep the secret name as `default`**
@@ -208,14 +206,6 @@ Now that a deployment URL is available we can use a REST client to make inferenc
 ### Using curl
 
 Open Git bash application in your system and enter the following commands.
-
-#### Token Generator
-
-For generating the token,
-
-```
-TOKEN=$(curl --silent --location "https://teched-launchpad-demo.authentication.sap.hana.ondemand.com/oauth/token?grant_type=client_credentials" --header "Authorization: Basic c2ItODNjOTVkZTYtZjRmOS00ODMyLWJmZmYtZTBiNWUwYWRiOTZlIWI5Nzg5N3x4c3VhYV9zdGQhYjc3MDg5OmI2Y2RhNTEyLTU0OTYtNDYzMy05NTg5LTVmZmNmYWZlMmYxNyQ2Q3U3enplNElGTDZTeU5rdE1UdXc5eVc3MlZVLXZJTGUxSEpQem14UW1ZPQ==" | jq -r .access_token)
-```
 
 #### Inference call
 
